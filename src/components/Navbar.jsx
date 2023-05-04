@@ -19,6 +19,8 @@ function Navbar() {
           <a onClick={handleClick} href="#h">Contact</a>
           <a onClick={handleClick} href="#h">Shop</a>
           <a onClick={handleClick} href="#h">Blog</a>
+            <a href="/">Aboutest</a>
+            
           </div>
           <div className = "burguer">
             <BurguerButton clicked={clicked} handleClick= {handleClick}/>
@@ -33,21 +35,21 @@ export default Navbar
 
 const NavContainer = styled.nav`
   h2{
-    color: white;
+    color: red;
     font-weight: 400;
     span{
       font-weight: bold;
     }
   }
   padding: .4rem;
-  background-color: #333;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   a{
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   .links{
     position: absolute;
@@ -68,7 +70,7 @@ const NavContainer = styled.nav`
       margin: 0;
       a{
         font-size: 1rem;
-        color: white;
+        color: red;
         display: inline;
       }
       display: block;
