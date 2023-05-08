@@ -12,13 +12,14 @@ function Navbar() {
   return (
     <>
       <NavContainer>
-        <h2>Navbar <span>Responsive</span></h2>
+        <h2><span>CONSTRUCTORA PINO</span></h2>
           <div className = {`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="#h">Home</a>
-          <a onClick={handleClick} href="#h">About</a>
-          <a onClick={handleClick} href="#h">Contact</a>
-          <a onClick={handleClick} href="#h">Shop</a>
-          <a onClick={handleClick} href="#h">Blog</a>
+          <a onClick={handleClick}  href="#h">Home</a>
+          <a onClick={handleClick}  href="#h">About</a>
+          <a onClick={handleClick}  href="#h">Features</a>
+          <a onClick={handleClick}  href="#h">Team</a>
+          <a onClick={handleClick}  href="#h">Gallery</a>
+          <a onClick={handleClick}  href="#h">Contact</a>
           
             
           </div>
@@ -34,10 +35,11 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.nav`
+
   h2{
     color: #333;
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     span{
       font-weight: bold;
     }

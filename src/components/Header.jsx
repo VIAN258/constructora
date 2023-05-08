@@ -15,7 +15,8 @@ function Header()  {
                 <h1>
                   we are cool
                 </h1>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
                
               </div>
             </div>
@@ -73,6 +74,7 @@ const HeaderContainer = styled.div`
     padding-bottom: 200px;
     text-align: center;
   }
+
 `
 
 
