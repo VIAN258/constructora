@@ -19,7 +19,7 @@ function Navbar() {
           <a onClick={handleClick} href="#h">Contact</a>
           <a onClick={handleClick} href="#h">Shop</a>
           <a onClick={handleClick} href="#h">Blog</a>
-            <a href="/">Aboutest</a>
+          
             
           </div>
           <div className = "burguer">
@@ -35,7 +35,8 @@ export default Navbar
 
 const NavContainer = styled.nav`
   h2{
-    color: red;
+    color: #333;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     span{
       font-weight: bold;
@@ -69,8 +70,9 @@ const NavContainer = styled.nav`
       position: initial;
       margin: 0;
       a{
-        font-size: 1rem;
-        color: red;
+        font-size: 1.2rem;
+        color: #333;
+        font-family: "Raleway", sans-serif;
         display: inline;
       }
       display: block;
