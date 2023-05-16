@@ -21,12 +21,14 @@ function Navbar() {
           <a onClick={handleClick}  href="#h">Gallery</a>
           <a onClick={handleClick}  href="#h">Contact</a>
           
-            
           </div>
           <div className = "burguer">
             <BurguerButton clicked={clicked} handleClick= {handleClick}/>
+            
           </div>
           <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+
+          
       </NavContainer>
     </>     
   )
@@ -63,19 +65,21 @@ const NavContainer = styled.nav`
     margin-right: auto;
     text-align: center;
     transition: all .5s ease;
+
     a{
       color: white;
-      font-size: 2rem;
+      font-size: 1.5rem;
       display: block;
     }
     @media(min-width: 768px){
       position: initial;
       margin: 0;
       a{
-        font-size: 1.2rem;
-        color: #333;
+        font-size: 1rem;
+        color: black;
         font-family: "Raleway", sans-serif;
         display: inline;
+        
       }
       display: block;
     }
@@ -86,14 +90,16 @@ const NavContainer = styled.nav`
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 20%;
     left: 0;
     right: 0;
     text-align: center;
     a{
-      font-size: 2rem;
-      margin-top: 1rem;
+      font-size: 1.5rem;
+      margin-top: 0.9rem;
       color: white;
+      
+     
     }
   }
   .burguer{
@@ -104,20 +110,23 @@ const NavContainer = styled.nav`
 `
 
 const BgDiv = styled.div`
-  background-color: #222;
+  background-color: black;
   position: absolute;
   top: -1000px;
   left: -1000px;
   width: 100%;
   height: 100%;
   z-index: -1;
+  
   transition: all .6s ease ;
   
   &.active{
     border-radius: 0 0 80% 0;
-    top: 0;
+    position: absolute;
+    top: 81px;
     left: 0;
     width: 100%;
     height: 100%;
+    
   }
 `

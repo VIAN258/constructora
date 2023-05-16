@@ -34,6 +34,7 @@ function Header()  {
 export default Header
 
 const HeaderContainer = styled.div`
+
 .intro {
     display: table;
     width: 100%;
@@ -44,6 +45,8 @@ const HeaderContainer = styled.div`
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    z-index:-20;
+    
   }
   .intro .overlay {
     background: rgba(0, 0, 0, 0.2);
