@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 
-function Header()  {
+function Header(props)  {
   return (
     <>
       <HeaderContainer>
@@ -13,11 +13,16 @@ function Header()  {
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
                 <h1>
-                  we are cool
+                {props.data ? props.data.title : "Loading"}
+                  <span></span>
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                
-               
+                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <a
+                  href="#features"
+                  className="btn btn-custom btn-lg page-scroll"
+                >
+                  Learn More
+                </a>{" "}
               </div>
             </div>
           </div>
@@ -45,7 +50,7 @@ const HeaderContainer = styled.div`
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    z-index:-20;
+    
     
   }
   .intro .overlay {
@@ -59,6 +64,7 @@ const HeaderContainer = styled.div`
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+    
   }
   .intro h1 span {
     font-weight: 800;
@@ -77,7 +83,7 @@ const HeaderContainer = styled.div`
     padding-bottom: 200px;
     text-align: center;
   }
-
+ 
 `
 
 

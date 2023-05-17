@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Navbarboos/>
-      <Header/>
+      <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
     </>
   );
